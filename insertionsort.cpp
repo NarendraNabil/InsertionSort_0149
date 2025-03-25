@@ -6,8 +6,21 @@ int n;
 
 void input()
 {
-    cout  << "Masukkan Jumlah Data pada Array : ";
-    cin >> n;
+    while (true)
+    {
+        cout << "Masukkan Jumlah Data pada Array : ";
+        cin >> n;
+
+        if (n <= 20)
+        {
+            break;
+        }
+        else
+        {
+            cout << "\nArray yang anda masukkan maksimal 20 elemen.\n";
+        }
+
+    }
 
     cout << endl;
     cout << "======================" << endl;
@@ -19,6 +32,9 @@ void input()
         cout << "Data ke-" << (i + 1) << ": ";
         cin >> arr[i];
     }
+    
+
+   
 }
 
 
